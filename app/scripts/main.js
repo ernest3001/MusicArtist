@@ -6,7 +6,9 @@ $(document).ready(function(){
 var button = $(".buttonmsg");
 
 button.on("click", function(){
-    alert("Please put your e-mail below");
+
+    alert("Please confirm by clicking 'ok' and put your e-mail address below.")
 })
+
 
 });
