@@ -1,0 +1,141 @@
+#reasons{
+  background-color: #b07cf8;
+  padding: 5rem 1rem 5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  article{
+    text-align: center;
+    h1{
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include desk{
+      flex-wrap: nowrap;
+    };
+
+    .reason-icon{
+        width: 20%;
+        height: 7rem;
+        align-self: center;
+        margin-top: 3px;
+    }
+
+    .event{
+        background-image: url("../images/eventicon.png");
+        background-position: center;
+        background-size: cover;
+        @include desk{
+            height: 9rem;
+            width: 25%;
+        }
+    }
+
+    .payment{
+        @extend .event;
+        background-image: url("../images/payment.png");
+        @include desk{
+            height: 10rem;
+            width: 25%;
+        }
+    }
+
+    .satisfaction{
+        @extend .event;
+        background-image: url("../images/happyicon.png");
+        @include desk{
+            height: 10rem;
+        }
+    }
+
+    .reason1{
+
+    border: 1px solid black;
+    background-color: #F3F3F3;
+    color: black;
+    opacity: 0.8;
+    .book1{
+        align-self: center;
+    }
+    }
+
+    .reason2{
+      @extend .reason1;
+      .book2{
+          align-self: center;
+      }
+    }
+    .reason3{
+      @extend .reason1;
+      .book3{
+         align-self: center;
+      }
+    }
+    .reason1, .reason2, .reason3{
+      width: 95vw;
+      height: 95vw;
+      margin-top:0.5rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include desk{
+        width: 33vw;
+        height: auto;
+        margin: 1rem;
+      };
+      .date{
+        width: 20%;
+        height: 20%;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 5px;
+        margin: 2rem;
+
+        }
+      article{
+        align-self: flex-end;
+        margin: 2rem;
+        text-align: left;
+        line-height: 1.5rem;
+      }
+      }
+    }
+    button{
+    width: 50vw;
+    height: 4rem;
+    border: none;
+    background-color: #f82b3c;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: -2px 2px 5px #666;
+    -moz-box-shadow: -2px 2px 5px #666;
+    box-shadow: -2px 2px 5px #666;
+    @include desk{
+      width: 90%;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    };
+  }
+  button:hover{
+      width: 55vw;
+      height: 4.4rem;
+      font-weight: 900;
+      @include desk{
+          width: 100%;
+          height: 5rem;
+          font-weight: 900;
+          font-size: 2rem;
+      }
+
+  }
+}

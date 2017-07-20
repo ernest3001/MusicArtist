@@ -1,0 +1,77 @@
+#section1{
+  background-image: url("../images/bg-top.png");
+  background-position: 60% 25%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #333;
+  @include desk{
+    align-items: flex-start;
+    background-size: cover;
+  };
+  h1{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 6rem;
+    margin-top: 10vh;
+    align-self: center;
+    @include desk{
+        font-size: 6rem;
+      width: 20%;
+      align-self: flex-start;
+    };
+  }
+  article{
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+    margin-top: 1rem;
+    color: #FFFFFF;
+    @include desk{
+      width: 25%;
+      align-self: flex-start;
+      text-align: left;
+    };
+  }
+  a{
+      @include desk{
+          display: block;
+        width: 100%;
+        align-self: flex-start;
+      };
+  }
+  button{
+    width: 60vw;
+    height: 6rem;
+    margin-top: 1.5rem;
+    align-self: center;
+    background-color: #fe6033;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 200;
+    border: none;
+    -webkit-box-shadow: -2px 2px 5px #666;
+    -moz-box-shadow: -2px 2px 5px #666;
+    box-shadow: -2px 2px 5px #666;
+    position: relative;
+    @include desk{
+      width: 20%;
+      align-self: flex-start;
+    };
+  }
+  button:hover{
+      width: 65vw;
+      height: 7rem;
+      font-size: 2rem;
+      font-weight: 900;
+      @include desk{
+          width: 25%;
+          font-size: 3rem;
+
+      }
+  }
+
+}

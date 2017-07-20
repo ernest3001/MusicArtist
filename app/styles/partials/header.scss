@@ -1,0 +1,135 @@
+#header{
+  width: 100%;
+  background-color: rgba(255,255,255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 10;
+  a:link{
+    text-decoration: none;
+    color: black;
+  }
+  a:visited{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    @include desk{
+      padding-bottom: 0.3rem;
+      box-shadow:inset  0 0px 0 white, inset 0 -3px 0 orange;
+    };
+  }
+  a:active{
+    text-decoration: none;
+  }
+}
+
+.extended{
+  padding-top: 1.5rem;
+  transition: padding 1s;
+}
+.extended-top{
+  padding-top: 1rem;
+}
+
+
+.logo{
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: black;
+  float: left;
+  @include desk{
+    display: inline-block;
+    float: left;
+  };
+}
+
+.menu_btn{
+  display: flex;
+  float: right;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 4rem;
+  margin: 1rem;
+  cursor: pointer;
+  @include desk{
+    display: none;
+  };
+}
+
+.bar1{
+  display: inline-block;
+  width: 4rem;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 3px;
+}
+.bar2{
+  display: inline-block;
+  width: 4rem;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 3px;
+}
+.bar3{
+  display: inline-block;
+  width: 4rem;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  @include desk{
+    width: auto;
+    float:right;
+  };
+}
+.menu{
+  list-style-type: none;
+  @include desk{
+    float: right;
+    margin-right: 1rem;
+    display: flex;
+  };
+  li{
+    font-size: 1em;
+    font-weight: bold;
+    @include desk{
+      font-size: 1.5rem;
+      font-weight: normal;
+      display: inline-block;
+      margin: 0.5rem;
+      align-self: center;
+
+    };
+
+  }
+}
+
+
+
+.underline{
+    box-shadow:inset  0 0px 0 white, inset 0 -2px 0 orange;
+    @include desk{
+      padding-bottom: 0.3rem;
+    };
+
+}
+.hidden_menu{
+  display: none;
+  @include desk{
+    display: block;
+  };
+}

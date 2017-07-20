@@ -1,58 +1,204 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>junior html scss assignment repo</title>
 
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,600,700,900" rel="stylesheet">
+  <title>junior html scss assignment repo</title>
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if IE]>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+
+  <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div>
-        <a href="/" class="logo">
-          <img src="images/logo.svg" alt="Plugify">
-        </a>
-      </div>
+
+
+
+  <header id="header" class="container extended">
+    <a class="logo" href="#">Mac DeMarco</a>
+    <div class="menu_btn" data-num="0">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
     </div>
+    <nav class="navigation hidden_menu">
+      <ul class="menu">
+        <li><a id="link1" href="#">Home</a></li>
+        <li><a id="link2" href="#aboutUs">About</a></li>
+        <li><a id="link3" href="#music">Music</a></li>
+        <li><a id="link4" href="#gallery">Gallery</a></li>
+        <li><a id="link5" href="#reasons">Reasons to book</a></li>
+        <li><a id="link6" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="section1" class="container">
+    <h1>Mac DeMarco AMSTERDAM Tour</h1>
+    <article>
+      Get our special offer to be closer to the artist. Best place in Amsterdam arena! First 100 tickets 50% price!
+    </article>
+    <a href="#contact"><button type="button" name="button">BOOK NOW</button></a>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  </section>
+  <section id="aboutUs" class="container">
+    <div class="image1"></div>
+    <article>
+      <h1 class="aboutHeader">This Old Dog</h1>
+      <p>
+        <strong>This Old Dog</strong> is the newest and third full-length album by singer-songwriter and multi-instrumentalist Mac DeMarco, released on May 5, 2017 through Captured Tracks.Following the release of Another One, DeMarco moved from his isolated
+        Queens home to a house in Los Angeles to create the album. The album spawned two singles in January, "My Old Man" and "This Old Dog", which are the two first tracks on the album. The singles "On The Level" and "One More Love Song" were released
+        in April 2017. The album leaked on April 13, 2017.
+        <br><br>
+        <strong>DeMarco's</strong> style is recognizable via its use of flat drums, use of chorus and vibrato effects on the guitar and a generally lazy atmosphere a la soft rock records, muted, low frequency bass guitars, along with a Lennon-esque vocal
+        style which has also been compared to Damon Albarn of Gorillaz. He has also mentioned Shuggie Otis, Neil Young, Steely Dan, Bruce Springsteen, Yellow Magic Orchestra, Strawberry Alarm Clock, Francis Rossi, Jonathan Richman, Weezer, Harry Nilsson
+        and the Grateful Dead as favourite artists. His guitar-based compositions have moved from glam-inspired works to what reviewers describe as "off-kilter pop" or "folk rock".
+      </p>
+    </article>
+  </section>
+  <section id="music" class="container">
 
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
+    <div class="ourService">
+      <h1>Best Tracks</h1>
+    </div>
+    <ul>
+      <li><span class="span">Mac DeMarco - Freaking Out The Neighborhood
+          <audio src="../audio/Mac DeMarco-Freaking Out The Neighborhood.mp3" controls></audio>
+      </span><span class="icon1"></span></li>
+      <li><span class="span">Mac DeMarco - Salad Days
+          <audio src="../audio/Mac Demarco-Salad Days.mp3" controls></audio>
+      </span><span class="icon2"></span></li>
+      <li><span class="span">Mac DeMarco - The Stars Keep On Calling My Name
+        <audio src="../audio/Mac DeMarco-The Stars Keep On Calling My Name.mp3" controls></audio>
+      </span><span class="icon3"></span></li>
+      <li><span class="span">Mac DeMarco - Treat Her Better
+        <audio src="../audio/Mac DeMarco-Treat Her Better.mp3" controls></audio>
+      </span><span class="icon4"></span></li>
+    </ul>
+  </section>
+  <section id="gallery" class="container">
+    <article>
+      <h1>Gallery</h1>
+    </article>
+    <div class="photo1"></div>
+    <div class="pics">
+      <div class="photo2"></div>
+      <div class="photo3"></div>
+      <div class="photo4"></div>
+      <div class="photo5"></div>
+    </div>
+<a href="https://www.facebook.com/MacDeMarcoBand/photos/" target="_blank">  <button type="button" name="button">VIEW MORE</button>  </a>
+  </section>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+  <section id="reasons" class="container">
+      <article>
+        <h1>Reasons to book tickets for live concert</h1>
+
+      </article>
+      <div class="row">
+        <div class="reason1">
+            <div class="reason-icon event"></div>
+          <div class="book1">
+            <h3>Breathtaking events</h3>
+          </div>
+          <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur illo eveniet provident mollitia consequatur voluptatem quo saepe. Hic maiores nostrum harum optio! Labore, consequuntur culpa suscipit quos voluptate repudiandae.</p>
+          </article>
+        </div>
+        <div class="reason2">
+            <div class="reason-icon payment"></div>
+          <div class="book2">
+            <h3>Secure online payment</h3>
+          </div>
+          <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur illo eveniet provident mollitia consequatur voluptatem quo saepe. Hic maiores nostrum harum optio! Labore, consequuntur culpa suscipit quos voluptate repudiandae.</p>
+          </article>
+        </div>
+        <div class="reason3">
+            <div class="reason-icon satisfaction"></div>
+          <div class="book3">
+            <h3>Guaranteed satisfaction</h3>
+          </div>
+          <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur illo eveniet provident mollitia consequatur voluptatem quo saepe. Hic maiores nostrum harum optio! Labore, consequuntur culpa suscipit quos voluptate repudiandae.</p>
+          </article>
+        </div>
+      </div>
+     <a href="#contact"><button type="button" name="button">BOOK NOW</button></a>
+    </section>
+
+
+  <section id="contact" class="container">
+    <article>
+      <h1>Subscribe To Us</h1>
+      <p>Please leave your e-mail address to let us know you'd like to book a ticket.</p>
+    </article>
+    <input type="email" placeholder="Your email address">
+    <a href="message.html" target="_blank"><button type="button" name="button">SUBSCRIBE</button></a>
+  </section>
+
+  <footer id="footer" class="container">
+    <p>&copy 2017  Amsterdam</p>
+    <h6>Mac DeMarco</h6>
+    <p>Made with <span>love</span> by Ernest Kwaczynski</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>

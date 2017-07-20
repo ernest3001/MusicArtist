@@ -8,6 +8,8 @@ $icon-font-path: '../fonts/';
 // ------------------------------------
 
 @import 'app/styles/modules/position-mixin';
+@import 'app/styles/modules/colors';
+@import 'app/styles/modules/mixins';
 
 
 // ------------------------------------
@@ -15,3 +17,15 @@ $icon-font-path: '../fonts/';
 // ------------------------------------
 
 @import 'app/styles/partials/logo';
+@import 'app/styles/partials/container';
+@import 'app/styles/partials/header';
+@import 'app/styles/partials/content';
+@import 'app/styles/partials/footer';
+@import 'app/styles/partials/reasons';
+@import 'app/styles/partials/default';
+@import 'app/styles/partials/about';
+@import 'app/styles/partials/welcome';
+@import 'app/styles/partials/music';
+@import 'app/styles/partials/gallery';
+@import 'app/styles/partials/contact';
+@import 'app/styles/partials/messageuser';

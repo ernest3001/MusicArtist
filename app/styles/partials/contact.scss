@@ -1,0 +1,79 @@
+#contact{
+  padding: 1rem;
+  background-image: url("../images/b04.png");
+  background-repeat: no-repeat;
+  background-position: 62% 12em;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10rem 1rem 6rem 1rem;
+  @include desk{
+    display: block;
+    background-position: 50% -2.5em;
+  };
+  article{
+    text-align: center;
+    @include desk{
+      width:40%;
+      text-align: left;
+      margin-left: 2rem;
+    };
+    h1{
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    p{
+      margin-bottom: 1rem;
+    }
+  }
+  input[type="email"]{
+    width: 85vw;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    @include desk{
+      width:40%;
+      text-align: left;
+      margin-left: 2rem;
+      float:left;
+    };
+  }
+  a{
+  button{
+    width: 50vw;
+    height: 4rem;
+    background-color: #97BA2C;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    font-weight: 300;
+    -webkit-box-shadow: -2px 2px 5px #666;
+    -moz-box-shadow: -2px 2px 5px #666;
+    box-shadow: -2px 2px 5px #666;
+    @include desk{
+      width: 20%;
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    };
+  }
+  button:hover{
+      width: 52vw;
+      height: 5rem;
+      font-weight: 900;
+      @include desk{
+          width: 23%;
+          font-weight: 900;
+          height: 4rem;
+      }
+  }
+}
+
+button:hover{
+  cursor: pointer;
+}
+}

@@ -1,0 +1,103 @@
+#music{
+  background-color: #70c0ff;
+  padding-top: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  @include desk{
+    flex-wrap: nowrap;
+    height: 100vh;
+    justify-content: space-between;
+  };
+  .ourService{
+    background-image: url("../images/b03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include desk{
+      order: 2;
+      width: 50rem;
+      height: 50rem;
+      align-self: center;
+      background-size: contain;
+      margin-left: 3rem;
+      margin-top: 3rem;
+      margin-right: 10rem;
+    };
+    h1{
+      font-size: 8rem;
+      text-align: center;
+      color: #793D21;
+
+      font-weight: 900;
+    }
+  }
+  ul{
+    list-style-type: none;
+    color: black;
+    @include desk{
+      order: 1;
+      width: 35%;
+      margin-left: 2rem;
+      margin-right: 10rem;
+      align-self: center;
+
+    };
+    li{
+      background-color: white;
+      margin: 0.5rem;
+      height: 7rem;
+      display: flex;
+      justify-content: space-between;
+      -webkit-box-shadow: -2px 2px 5px #666;
+      -moz-box-shadow: -2px 2px 5px #666;
+      box-shadow: -2px 2px 5px #666;
+      .span{
+        align-self: center;
+        width: 60vw;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        color: #333;
+      }
+      .icon1{
+        width:5rem;
+        border-left: 1px solid gray;
+        background-image: url("../images/macdemarco2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7rem;
+        @include desk{
+          width: 15rem;
+        };
+      }
+      .icon2{
+          @extend .icon1;
+        background-image: url("../images/salad-days.png");
+        @include desk{
+          width: 15rem;
+        };
+      }
+      .icon3{
+          @extend .icon1;
+        background-image: url("../images/macdemarco2.png");
+        @include desk{
+          width: 15rem;
+        };
+      }
+      .icon4{
+          @extend .icon1;
+        background-image: url("../images/salad-days.png");
+        @include desk{
+          width: 15rem;
+        };
+      }
+    }
+  }
+}
