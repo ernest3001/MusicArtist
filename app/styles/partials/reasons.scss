@@ -19,14 +19,12 @@
     @include desk{
       flex-wrap: nowrap;
     };
-
     .reason-icon{
         width: 20%;
         height: 7rem;
         align-self: center;
         margin-top: 3px;
     }
-
     .event{
         background-image: url("../images/eventicon.png");
         background-position: center;
@@ -36,7 +34,6 @@
             width: 25%;
         }
     }
-
     .payment{
         @extend .event;
         background-image: url("../images/payment.png");
@@ -45,7 +42,6 @@
             width: 25%;
         }
     }
-
     .satisfaction{
         @extend .event;
         background-image: url("../images/happyicon.png");
@@ -53,9 +49,7 @@
             height: 10rem;
         }
     }
-
     .reason1{
-
     border: 1px solid black;
     background-color: #F3F3F3;
     color: black;
@@ -96,7 +90,6 @@
         background-color: rgba(0,0,0,0.5);
         border-radius: 5px;
         margin: 2rem;
-
         }
       article{
         align-self: flex-end;
@@ -136,6 +129,5 @@
           font-weight: 900;
           font-size: 2rem;
       }
-
   }
 }
